@@ -26,12 +26,12 @@ type ToastState = {
 
 type ToastAction = 
 | {type:'ADD_TOAST', toast:ToastContent}
-| {type:'UPDATE_TOAST', toast:Partial<ToastContent> & {id:String}}
-| {type:'DISMISS_TOAST', toastId?:String}
-| {type:'REMOVE_TOAST', toastId?:String}
-const toastTimeouts = new Map<String, number>();
+| {type:'UPDATE_TOAST', toast:Partial<ToastContent> & {id:string}}
+| {type:'DISMISS_TOAST', toastId?:string}
+| {type:'REMOVE_TOAST', toastId?:string}
+const toastTimeouts = new Map<string, number>();
 
-const addToRemoveQueue = (toastId: String) => {
+const addToRemoveQueue = (toastId: string) => {
     if(toastTimeouts.has(toastId)) {
         return;
     }
@@ -148,7 +148,7 @@ function useToast() {
     return {
         ...state,
         toast,
-        dismiss: (toastId?: String)=> dispatch({type: 'DISMISS_TOAST', toastId}),
+        dismiss: (toastId?: string)=> dispatch({type: 'DISMISS_TOAST', toastId}),
     };
 }
 
