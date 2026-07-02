@@ -6,7 +6,7 @@ const projects = [
     title: "Payment Application",
     description:
       "payment application built using Java 21 and Spring Boot 4.0.0, following microservices architecture principles. The system supports secure payments, wallet management, rewards processing, and real-time notifications, all orchestrated through an API Gateway and implemented with event-driven communication using Kafka.",
-    image: "public/projects/payment-app.png",
+    image: `${import.meta.env.BASE_URL}projects/payment-app.png`,
     tags: [
       "Java",
       "Spring Boot",
@@ -30,7 +30,7 @@ const projects = [
     title: "E-Commerce Platform",
     description:
       "e‑commerce backend service built using Java 25, Spring Boot 4.0, MongoDB, and Elasticsearch. The application uses MongoDB as the system of record for all product data and Elasticsearch as a dedicated search index to provide fast, scalable, and flexible search capabilities.",
-    image: "public/projects/ecommerce-app.png",
+    image: `${import.meta.env.BASE_URL}projects/ecommerce-app.png`,
     tags: [
       "Java",
       "Spring Boot",
@@ -50,7 +50,7 @@ const projects = [
     title: "Banking Application",
     description:
       "This application exposes RESTful APIs to manage bank accounts and transactions such as create account, deposit,withdraw, view accounts, delete account, with global exception handling using @ControllerAdvice, following SOLID principles and clean architecture best practices.",
-    image: "public/projects/banking-app.png",
+    image: `${import.meta.env.BASE_URL}projects/banking-app.png`,
     tags: [
       "Java",
       "Spring Boot",
