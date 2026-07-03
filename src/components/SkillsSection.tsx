@@ -16,6 +16,7 @@ const skills = [
   { name: "Docker", level: 60, category: "tools" },
   { name: "Kubernetes", level: 60, category: "tools" },
   { name: "Github", level: 90, category: "tools" },
+  { name: "CI/CD", level: 60, category: "tools" },
 
   //cloud
   { name: "AWS", level: 60, category: "cloud" },
