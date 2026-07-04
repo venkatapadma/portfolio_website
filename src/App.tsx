@@ -7,7 +7,7 @@ const App = () => {
   return (
     <>
       <Toaster />
-      <BrowserRouter basename="/portfolio_website/">
+      <BrowserRouter basename="/portfolio_site/">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="*" element={<NotFound />} />
