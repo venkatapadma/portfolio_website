@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 import path from "path"
 
 export default defineConfig({
-  base: '/portfolio_website/',
+  base: '/portfolio_site/',
   server: {
     port:3000,
     open: true,
